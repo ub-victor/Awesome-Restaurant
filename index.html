@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AwesomeResto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full h-16 z-50">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <div class="flex items-center">
+            <img src="img/10001.png" alt="PODZO Logo" class="h-4">
+          </div>
+          <nav id="mobile-nav" class="hidden lg:flex items-center space-x-8">
+            <a href="#" class="text-orange-500 font-semibold hover:text-orange-600">Home</a>
+            <a href="#" class="text-orange-500 font-semibold hover:text-orange-600">Restaurants</a>
+            <a href="#" class="text-orange-500 font-semibold hover:text-orange-600 ">Contact</a>
+            <span class="border-l border-gray-700 h-6"></span>
+            <a href="#" class="text-orange-500 font-semibold hover:text-orange-600 ">Login</a>
+            <a href="#" class="text-white bg-orange-500 rounded-sm px-7 py-2">Sign up</a>
+          </nav>
+          <div class="lg:hidden">
+            <button id="mobile-menu-button" class="border border-transparent text-gray-700 cursor-pointer hover:border-orange-300 hover:bg-orange-500 rounded-full  focus:outline-none mx-4 my-2 p-2">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+</body>
+
+
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'poppins',sans-serif;
+}
+
+/* Default styles for the mobile nav */
+#mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position it below the header */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for when the mobile nav is visible */
+#mobile-nav.mobile-visible {
+    display: flex;
+}
+
+/* Adjust the layout of the links in the mobile nav */
+#mobile-nav.mobile-visible a {
+    margin-bottom: 1rem;
+}
+
+/* Ensure the logo and button are aligned correctly */
+.container {
+    position: relative;
+}
