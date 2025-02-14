@@ -1,8 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileNav = document.getElementById('mobile-nav');
-
-    mobileMenuButton.addEventListener('click', function() {
-        mobileNav.classList.toggle('mobile-visible');
-    });
-});
+        // Toggle mobile menu visibility
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    
