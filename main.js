@@ -8,9 +8,9 @@
 
            // Adjust main content padding
            if (mobileMenu.classList.contains('hidden')){
-            mainContent.classList.remove('pt-70'); // Reset padding if menu is closed
+            mainContent.classList.remove('pt-72'); // Reset padding if menu is closed
            }else {
-            mainContent.classList.add('pt-70');  // Add padding if menu is open
+            mainContent.classList.add('pt-72');  // Add padding if menu is open
             } 
         });
     
