@@ -24,9 +24,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function updateCarousel() {
         const cardWidth = document.querySelector('.restaurant-card').offsetWidth;
+        const scrollPosition = currentIndex * (cardWidth + 32); // 32px for padding
         carousel.scrollTo({
-            left: currentIndex * (cardWidth + 32), // 32px for padding
+            left: scrollPosition,
             behavior: 'smooth'
+        });
+        
+        // Disable/enable arrows based on position
+        prevBtns.forEach(btn => {
+            btn.disabled = currentIndex === 0;
+            btn.classList.toggle('opacity-50', currentIndex === 0);
+            btn.classList.toggle('cursor-not-allowed', currentIndex === 0);
+        });
+        
+        nextBtns.forEach(btn => {
+            btn.disabled = currentIndex >= carousel.children.length - 1;
+            btn.classList.toggle('opacity-50', currentIndex >= carousel.children.length - 1);
+            btn.classList.toggle('cursor-not-allowed', currentIndex >= carousel.children.length - 1);
         });
     }
     
@@ -48,12 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Hide arrows on desktop
+    // Initialize arrows
+    updateCarousel();
+    
+    // Handle window resize
     function handleResize() {
-        if (window.innerWidth >= 768) {
-            currentIndex = 0;
-            carousel.scrollTo({ left: 0, behavior: 'auto' });
-        }
+        const cardWidth = document.querySelector('.restaurant-card').offsetWidth;
+        currentIndex = Math.round(carousel.scrollLeft / (cardWidth + 32));
+        updateCarousel();
     }
     
     window.addEventListener('resize', handleResize);
