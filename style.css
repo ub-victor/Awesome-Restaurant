@@ -4,20 +4,35 @@
     font-family: 'poppins', sans-serif;
 }   
 
+
 .restaurant-carousel {
     scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+.restaurant-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
 }
 .restaurant-card {
     scroll-snap-align: start;
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% - 2rem); /* Account for padding */
+    transition: transform 0.3s ease;
 }
 @media (min-width: 768px) {
     .restaurant-card {
-        flex: 0 0 calc(50% - 1rem);
+        flex: 0 0 calc(50% - 2rem);
     }
 }
 @media (min-width: 1024px) {
     .restaurant-card {
-        flex: 0 0 calc(33.333% - 1rem);
+        flex: 0 0 calc(33.333% - 2rem);
     }
+}
+
+/* Arrow button styling */
+.carousel-prev, .carousel-next {
+    transition: all 0.3s ease;
+}
+.carousel-prev:disabled, .carousel-next:disabled {
+    pointer-events: none;
 }
