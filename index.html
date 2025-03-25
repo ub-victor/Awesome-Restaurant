@@ -78,96 +78,114 @@
             </div>
         </div>
 
-         <!-- New Restaurant Section -->
-        <div class="flex bg-slate-100 ">
-            <h4 class="w-full text-center text-black font-bold text-3xl mt-10 mb-16 ">Our restaurants</h4>
-
-            <!-- Cards-->
-            <div>
-                <!-- Cards 1 -->
-
-                <img src="img/10010.svg" alt="previous">
-                <div>
-                    <div>
-                        <img src="img/10002.png" alt="Restaurant 1" class="w-full h-48 p-2 object-cover">
-                    </div>
-                    <div>
-                        <div class="bg-gray-800 rounded font-bold">KGSM</div>
-                        <div>
-                            <div class="text-black font-bold text-xl">KUGASIMA CAFFEE</div>
-                            <span class="text-gray-500">$$$ - Kimihurura</span>
+         <!-- New Restaurant Carousel Section -->
+         <section class="bg-slate-100 py-12">
+            <h2 class="w-full text-center text-black font-bold text-3xl mt-10 mb-16">Our restaurants</h2>
+            
+            <div class="container mx-auto px-4 relative">
+                <!-- Navigation Arrows -->
+                <button class="hidden md:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-orange-100 transition-colors">
+                    <img src="img/10010.svg" alt="previous" class="w-6 h-6">
+                </button>
+                
+                <button class="hidden md:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-orange-100 transition-colors">
+                    <img src="img/10009.svg" alt="next" class="w-6 h-6">
+                </button>
+                
+                <!-- Carousel Container -->
+                <div class="relative overflow-hidden">
+                    <div class="restaurant-carousel flex overflow-x-auto snap-x snap-mandatory pb-8 -mx-4 scroll-smooth" id="restaurant-carousel">
+                        <!-- Restaurant Card 1 -->
+                        <div class="restaurant-card px-4">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
+                                <div>
+                                    <img src="img/10002.png" alt="WISABINA CAFIEL" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <div class="bg-gray-800 text-white text-xs px-2 py-1 rounded inline-block mb-2">WISAB</div>
+                                    <h3 class="text-black font-bold text-xl mb-1">WISABINA CAFIEL</h3>
+                                    <p class="text-gray-500">$15 - restaurant</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Restaurant Card 2 -->
+                        <div class="restaurant-card px-4">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
+                                <div>
+                                    <img src="img/10002.png" alt="WISABINA CAFIEL" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <div class="bg-gray-800 text-white text-xs px-2 py-1 rounded inline-block mb-2">WISAB</div>
+                                    <h3 class="text-black font-bold text-xl mb-1">WISABINA CAFIEL</h3>
+                                    <p class="text-gray-500">$15 - restaurant</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Restaurant Card 3 -->
+                        <div class="restaurant-card px-4">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
+                                <div>
+                                    <img src="img/10002.png" alt="WISABINA CAFIEL" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <div class="bg-gray-800 text-white text-xs px-2 py-1 rounded inline-block mb-2">WISAB</div>
+                                    <h3 class="text-black font-bold text-xl mb-1">WISABINA CAFIEL</h3>
+                                    <p class="text-gray-500">$15 - restaurant</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Restaurant Card 4 -->
+                        <div class="restaurant-card px-4">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
+                                <div>
+                                    <img src="img/10002.png" alt="VUGAEMA CAFFEE" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <div class="bg-gray-800 text-white text-xs px-2 py-1 rounded inline-block mb-2">VUGA</div>
+                                    <h3 class="text-black font-bold text-xl mb-1">VUGAEMA CAFFEE</h3>
+                                    <p class="text-gray-500">555 - Kirillaruna</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Restaurant Card 5 -->
+                        <div class="restaurant-card px-4">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
+                                <div>
+                                    <img src="img/10002.png" alt="VUGAEMA CAFFEE" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <div class="bg-gray-800 text-white text-xs px-2 py-1 rounded inline-block mb-2">VUGA</div>
+                                    <h3 class="text-black font-bold text-xl mb-1">VUGAEMA CAFFEE</h3>
+                                    <p class="text-gray-500">555 - Kirillaruna</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
-                <!-- Cards 2 -->
-                <div>
-                    <div>
-                        <img src="img/10002.png" alt="Restaurant 1" class="w-full h-48 p-2 object-cover">
-                    </div>
-                    <div>
-                        <div class="bg-gray-800 rounded font-bold">KGSM</div>
-                        <div>
-                            <div class="text-black font-bold text-xl">KUGASIMA CAFFEE</div>
-                            <span class="text-gray-500">$$$ - Kimihurura</span>
-                        </div>
-                    </div>
-
+                
+                <!-- Mobile Navigation -->
+                <div class="flex justify-center mt-6 space-x-4 md:hidden">
+                    <button class="carousel-prev bg-white p-2 rounded-full shadow-md hover:bg-orange-100 transition-colors">
+                        <img src="img/10010.svg" alt="previous" class="w-6 h-6">
+                    </button>
+                    <button class="carousel-next bg-white p-2 rounded-full shadow-md hover:bg-orange-100 transition-colors">
+                        <img src="img/10009.svg" alt="next" class="w-6 h-6">
+                    </button>
                 </div>
-
-                <!-- Cards 3 -->
-                <div>
-                    <div>
-                        <img src="img/10002.png" alt="Restaurant 1" class="w-full h-48 p-2 object-cover">
-                    </div>
-                    <div>
-                        <div class="bg-gray-800 rounded font-bold">KGSM</div>
-                        <div>
-                            <div class="text-black font-bold text-xl">KUGASIMA CAFFEE</div>
-                            <span class="text-gray-500">$$$ - Kimihurura</span>
-                        </div>
-                    </div>
-
+                
+                <!-- Explore More Button -->
+                <div class="text-center mt-10">
+                    <button class="flex items-center justify-center mx-auto px-6 py-3 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white transition-colors">
+                        Explore more
+                        <img src="img/10009.svg" alt="arrow" class="w-5 h-5 ml-2">
+                    </button>
                 </div>
-
-                <!-- Cards 4 -->
-                <div>
-                    <div>
-                        <img src="img/10002.png" alt="Restaurant 1" class="w-full h-48 p-2 object-cover">
-                    </div>
-                    <div>
-                        <div class="bg-gray-800 rounded font-bold">KGSM</div>
-                        <div>
-                            <div class="text-black font-bold text-xl">KUGASIMA CAFFEE</div>
-                            <span class="text-gray-500">$$$ - Kimihurura</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Cards 5 -->
-                <div>
-                    <div>
-                        <img src="img/10002.png" alt="Restaurant 1" class="w-full h-48 p-2 object-cover">
-                    </div>
-                    <div>
-                        <div class="bg-gray-800 rounded font-bold">KGSM</div>
-                        <div>
-                            <div class="text-black font-bold text-xl">KUGASIMA CAFFEE</div>
-                            <span class="text-gray-500">$$$ - Kimihurura</span>
-                        </div>
-                    </div>
-
-                </div>
-                    <img src="img/10009.svg" alt="next">
-
             </div>
-
-            <button class="flex items-center justify-center mx-auto px-6 py-3 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white transition-colors">
-                Explore more
-            </button>
-        </div>
+        </section>     
 
 
     </main>
