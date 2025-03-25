@@ -4,7 +4,7 @@
     font-family: 'poppins', sans-serif;
 }   
 
-
+/* part #2 main*/
 .restaurant-carousel {
     scroll-snap-type: x mandatory;
     scrollbar-width: none; /* Hide scrollbar for Firefox */
