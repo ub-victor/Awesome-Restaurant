@@ -3,3 +3,21 @@
 * {
     font-family: 'poppins', sans-serif;
 }   
+
+.restaurant-carousel {
+    scroll-snap-type: x mandatory;
+}
+.restaurant-card {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .restaurant-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+@media (min-width: 1024px) {
+    .restaurant-card {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
